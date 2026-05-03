@@ -1,0 +1,44 @@
+{
+  "name": "flywheel",
+  "owner": {
+    "name": "chunpaiyang",
+    "url": "https://github.com/chunpaiyang"
+  },
+  "metadata": {
+    "description": "In the LLM era, you fix the skill, not the code. A self-compounding workflow: autonomous execution, epistemic verification, structural maintenance, post-hoc skill blame."
+  },
+  "plugins": [
+    {
+      "name": "swarm",
+      "source": {
+        "source": "github",
+        "repo": "chunpaiyang/swarm"
+      },
+      "description": "Autonomous orchestration: hand off a task end-to-end, sub-agents do the work, main session reports only on completion."
+    },
+    {
+      "name": "lens",
+      "source": {
+        "source": "github",
+        "repo": "chunpaiyang/lens"
+      },
+      "description": "Epistemic primitives for Claude Code: dispatched sub-agents with adversarial roles + external tool grounding to break single-context reasoning ceilings."
+    },
+    {
+      "name": "tend",
+      "source": {
+        "source": "github",
+        "repo": "chunpaiyang/tend"
+      },
+      "description": "Lint a .md library for structural integrity: file size cap, broken cross-links, orphan files, required sections."
+    },
+    {
+      "name": "postmortem",
+      "source": {
+        "source": "github",
+        "repo": "chunpaiyang/postmortem"
+      },
+      "description": "Post-hoc skill blame attribution. Reads a JSONL transcript + symptom, identifies which skill broke its declared contract, cites evidence."
+    }
+  ]
+}
